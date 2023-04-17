@@ -285,6 +285,7 @@ img {
 .feature-item {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     width: 264px;
     height: 112px;
@@ -351,7 +352,8 @@ img {
 }
 
 .team-content {
-    padding: 32px 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
 }
 
@@ -422,12 +424,19 @@ img {
 
 /* *****CUSTOMERS***** */
 
+.customers-title {
+    line-height: 1.1;
+}
+
 .customers-list {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
+.customers-item {
+    
+}
 
 .customers-link {
     display: flex;
@@ -437,16 +446,20 @@ img {
     width: 168px;
     height: 88px;
 
-    fill: var(--customers-color);
-
+    color: var(--customers-color);
+    
     border: 1px solid var(--customers-color);
     border-radius: 4px;
 }
 
 .customers-link:hover, 
 .customers-link:focus {
-    fill: var(--hover-color);
+    color: var(--hover-color);
     border-color: var(--hover-color);
+}
+
+.customers-icon {
+    fill: currentColor;
 }
 
 
@@ -540,9 +553,13 @@ img {
     border-right: 1px solid var(--border-header-color);
 }
 
+.filter-item .link {
+    display: block;
+}
 
-.filter-item:hover, 
-.filter-item:focus {
+
+.filter-item .link:hover, 
+.filter-item .link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -561,6 +578,7 @@ img {
      color: var(--white-color);
 
      display: flex;
+     align-items: baseline;
      gap: 120px;
 
  
@@ -580,6 +598,10 @@ img {
 
 .footer .span {
     color: var(--team-bg-color);
+}
+
+.footer .socials {
+gap: 16px;
 }
 
 .socials-title {
