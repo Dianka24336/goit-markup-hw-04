@@ -424,7 +424,8 @@ img {
 
 /* *****CUSTOMERS***** */
 
-.customers-title {
+.container .customers-title {
+
     line-height: 1.1;
 }
 
@@ -434,9 +435,6 @@ img {
     gap: 24px;
 }
 
-.customers-item {
-    
-}
 
 .customers-link {
     display: flex;
